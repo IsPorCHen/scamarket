@@ -3,12 +3,22 @@ using System.Windows.Forms;
 using System.Linq;
 using static System.Windows.Forms.LinkLabel;
 using System;
+using System.Drawing;
 
 namespace scaMarketPlays
 {
     public partial class Form1 : Form
     {
-        public Form1()
+
+        private void Form1_Load (object sender, EventArgs e)
+        {
+            this.StartPosition = FormStartPosition.CenterScreen;
+            CenterElements();
+            this.Resize += Form1_Resize;
+        }
+
+
+        public Form1 ()
         {
             InitializeComponent();
             HidePanels(false);
@@ -241,9 +251,58 @@ namespace scaMarketPlays
             userPassword.UseSystemPasswordChar = !checkBox1.Checked;
         }
 
-        private void Form1_Load (object sender, EventArgs e)
+        private void Form1_Resize (object sender, EventArgs e)
         {
+            CenterElements();
+        }
 
+        private void CenterElements ()
+        {
+            // Выводим отладочные сообщения для отслеживания работы
+            Console.WriteLine("Resizing Form: " + this.ClientSize.Width + "x" + this.ClientSize.Height);
+
+            // Центрирование элементов при изменении размера окна
+            pictureBox1.Location = new Point((this.ClientSize.Width - pictureBox1.Width) / 2, 10);
+
+            // Центрируем только если окно не в режиме полноэкранного отображения
+            if (!this.WindowState.Equals(FormWindowState.Maximized))
+            {
+                label1.Location = new Point((this.ClientSize.Width - label1.Width) / 2, 114);
+                userSelect.Location = new Point((this.ClientSize.Width - userSelect.Width) / 2, 130);
+                selectSaleman.Location = new Point((this.ClientSize.Width - selectSaleman.Width) / 2, 160);
+
+                // Центрируем все элементы
+                userLogin.Location = new Point((this.ClientSize.Width - userLogin.Width) / 2, 204);
+                userPassword.Location = new Point((this.ClientSize.Width - userPassword.Width) / 2, 254);
+                loginSaleman.Location = new Point((this.ClientSize.Width - loginSaleman.Width) / 2, 204);
+                passwordSaleman.Location = new Point((this.ClientSize.Width - passwordSaleman.Width) / 2, 254);
+
+                registrationButton.Location = new Point((this.ClientSize.Width - registrationButton.Width) / 2, 304);
+
+                label2.Location = new Point((this.ClientSize.Width - label2.Width) / 2, 283);
+                label3.Location = new Point((this.ClientSize.Width - label3.Width) / 2 + 140, 285);
+
+                checkBox1.Location = new Point((this.ClientSize.Width - checkBox1.Width) / 2 + 210, 254);
+            } else
+            {
+                // Для полноэкранного режима элементы остаются по центру
+                label1.Location = new Point((this.ClientSize.Width - label1.Width) / 2, 114);
+                userSelect.Location = new Point((this.ClientSize.Width - userSelect.Width) / 2, 130);
+                selectSaleman.Location = new Point((this.ClientSize.Width - selectSaleman.Width) / 2, 160);
+
+                // Размещение полей с отступом
+                userLogin.Location = new Point((this.ClientSize.Width - userLogin.Width) / 2, 204);
+                userPassword.Location = new Point((this.ClientSize.Width - userPassword.Width) / 2, 254);
+                loginSaleman.Location = new Point((this.ClientSize.Width - loginSaleman.Width) / 2, 204);
+                passwordSaleman.Location = new Point((this.ClientSize.Width - passwordSaleman.Width) / 2, 254);
+
+                registrationButton.Location = new Point((this.ClientSize.Width - registrationButton.Width) / 2, 304);
+
+                label2.Location = new Point((this.ClientSize.Width - label2.Width) / 2, 283);
+                label3.Location = new Point((this.ClientSize.Width - label3.Width) / 2 + 140, 285);
+
+                checkBox1.Location = new Point((this.ClientSize.Width - checkBox1.Width) / 2 + 210, 254);
+            }
         }
     }
 }

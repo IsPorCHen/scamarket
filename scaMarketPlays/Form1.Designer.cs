@@ -237,6 +237,9 @@ namespace scaMarketPlays
             this.Name = "Form1";
             this.Text = "Авторзация";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResizeBegin += new System.EventHandler(this.Form1_Resize);
+            this.ResizeEnd += new System.EventHandler(this.Form1_Resize);
+            this.SizeChanged += new System.EventHandler(this.Form1_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
