@@ -107,6 +107,5 @@ namespace scaMarketPlays
                 MessageBox.Show("Файл с продуктами не найден.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

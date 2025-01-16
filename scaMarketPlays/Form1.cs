@@ -240,5 +240,10 @@ namespace scaMarketPlays
             passwordSaleman.UseSystemPasswordChar = !checkBox1.Checked;
             userPassword.UseSystemPasswordChar = !checkBox1.Checked;
         }
+
+        private void Form1_Load (object sender, EventArgs e)
+        {
+
+        }
     }
 }

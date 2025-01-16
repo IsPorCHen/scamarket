@@ -16,7 +16,7 @@ namespace scaMarketPlays
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SalemanForm());
+            Application.Run(new Form1());
         }
     }
 }

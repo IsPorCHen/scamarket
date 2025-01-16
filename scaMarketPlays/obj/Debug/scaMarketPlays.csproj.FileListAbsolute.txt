@@ -68,3 +68,16 @@ C:\Users\328-7\Downloads\scam-main (1)\scam-main\scaMarketPlays\obj\Debug\scaMar
 C:\Users\328-7\Downloads\scam-main (1)\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.CoreCompileInputs.cache
 C:\Users\328-7\Downloads\scam-main (1)\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.exe
 C:\Users\328-7\Downloads\scam-main (1)\scam-main\scaMarketPlays\obj\Debug\scaMarketPlays.pdb
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\bin\Debug\scaMarketPlays.exe.config
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\bin\Debug\scaMarketPlays.exe
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\bin\Debug\scaMarketPlays.pdb
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.AssemblyReference.cache
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.addProduct.resources
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.buyer.resources
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.Form1.resources
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.Properties.Resources.resources
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.SalemanForm.resources
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.GenerateResource.cache
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.csproj.CoreCompileInputs.cache
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.exe
+C:\Users\st310-09\Source\Repos\scamarket\scaMarketPlays\obj\Debug\scaMarketPlays.pdb
