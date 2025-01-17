@@ -549,8 +549,5 @@ namespace scaMarketPlays
                 MessageBox.Show("Ошибка при загрузке данных о покупках.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-
     }
 }

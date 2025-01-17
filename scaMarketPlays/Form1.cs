@@ -258,51 +258,28 @@ namespace scaMarketPlays
 
         private void CenterElements ()
         {
-            // Выводим отладочные сообщения для отслеживания работы
             Console.WriteLine("Resizing Form: " + this.ClientSize.Width + "x" + this.ClientSize.Height);
 
-            // Центрирование элементов при изменении размера окна
             pictureBox1.Location = new Point((this.ClientSize.Width - pictureBox1.Width) / 2, 10);
 
-            // Центрируем только если окно не в режиме полноэкранного отображения
-            if (!this.WindowState.Equals(FormWindowState.Maximized))
-            {
-                label1.Location = new Point((this.ClientSize.Width - label1.Width) / 2, 114);
-                userSelect.Location = new Point((this.ClientSize.Width - userSelect.Width) / 2, 130);
-                selectSaleman.Location = new Point((this.ClientSize.Width - selectSaleman.Width) / 2, 160);
+            label1.Location = new Point((this.ClientSize.Width - label1.Width) / 2, 114);
+            userSelect.Location = new Point((this.ClientSize.Width - userSelect.Width) / 2, 130);
+            selectSaleman.Location = new Point((this.ClientSize.Width - selectSaleman.Width) / 2, 160);
 
-                // Центрируем все элементы
-                userLogin.Location = new Point((this.ClientSize.Width - userLogin.Width) / 2, 204);
-                userPassword.Location = new Point((this.ClientSize.Width - userPassword.Width) / 2, 254);
-                loginSaleman.Location = new Point((this.ClientSize.Width - loginSaleman.Width) / 2, 204);
-                passwordSaleman.Location = new Point((this.ClientSize.Width - passwordSaleman.Width) / 2, 254);
+            login.Location = new Point((this.ClientSize.Width - login.Width) / 2 - 125, 204);
+            password.Location = new Point((this.ClientSize.Width - password.Width) / 2 - 133, 256);
 
-                registrationButton.Location = new Point((this.ClientSize.Width - registrationButton.Width) / 2, 304);
+            userLogin.Location = new Point((this.ClientSize.Width - userLogin.Width) / 2, 204);
+            userPassword.Location = new Point((this.ClientSize.Width - userPassword.Width) / 2, 254);
+            loginSaleman.Location = new Point((this.ClientSize.Width - loginSaleman.Width) / 2, 204);
+            passwordSaleman.Location = new Point((this.ClientSize.Width - passwordSaleman.Width) / 2, 254);
 
-                label2.Location = new Point((this.ClientSize.Width - label2.Width) / 2, 283);
-                label3.Location = new Point((this.ClientSize.Width - label3.Width) / 2 + 140, 285);
+            registrationButton.Location = new Point((this.ClientSize.Width - registrationButton.Width) / 2, 304);
 
-                checkBox1.Location = new Point((this.ClientSize.Width - checkBox1.Width) / 2 + 210, 254);
-            } else
-            {
-                // Для полноэкранного режима элементы остаются по центру
-                label1.Location = new Point((this.ClientSize.Width - label1.Width) / 2, 114);
-                userSelect.Location = new Point((this.ClientSize.Width - userSelect.Width) / 2, 130);
-                selectSaleman.Location = new Point((this.ClientSize.Width - selectSaleman.Width) / 2, 160);
+            label2.Location = new Point((this.ClientSize.Width - label2.Width) / 2, 283);
+            label3.Location = new Point((this.ClientSize.Width - label3.Width) / 2 + 140, 285);
 
-                // Размещение полей с отступом
-                userLogin.Location = new Point((this.ClientSize.Width - userLogin.Width) / 2, 204);
-                userPassword.Location = new Point((this.ClientSize.Width - userPassword.Width) / 2, 254);
-                loginSaleman.Location = new Point((this.ClientSize.Width - loginSaleman.Width) / 2, 204);
-                passwordSaleman.Location = new Point((this.ClientSize.Width - passwordSaleman.Width) / 2, 254);
-
-                registrationButton.Location = new Point((this.ClientSize.Width - registrationButton.Width) / 2, 304);
-
-                label2.Location = new Point((this.ClientSize.Width - label2.Width) / 2, 283);
-                label3.Location = new Point((this.ClientSize.Width - label3.Width) / 2 + 140, 285);
-
-                checkBox1.Location = new Point((this.ClientSize.Width - checkBox1.Width) / 2 + 210, 254);
-            }
+            checkBox1.Location = new Point((this.ClientSize.Width - checkBox1.Width) / 2 + 210, 254);
         }
     }
 }

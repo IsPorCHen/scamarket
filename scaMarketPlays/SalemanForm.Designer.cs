@@ -55,14 +55,17 @@
             // 
             // addProductButton
             // 
+            this.addProductButton.BackColor = System.Drawing.Color.RoyalBlue;
             this.addProductButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addProductButton.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
+            this.addProductButton.ForeColor = System.Drawing.Color.White;
             this.addProductButton.Location = new System.Drawing.Point(3, 2);
             this.addProductButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addProductButton.Name = "addProductButton";
             this.addProductButton.Size = new System.Drawing.Size(901, 39);
             this.addProductButton.TabIndex = 1;
             this.addProductButton.Text = "Добавить продукт";
-            this.addProductButton.UseVisualStyleBackColor = true;
+            this.addProductButton.UseVisualStyleBackColor = false;
             this.addProductButton.Click += new System.EventHandler(this.addproduct_Click);
             // 
             // tabControl1
@@ -78,6 +81,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(915, 480);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.TabControl1_DrawItem);
             // 
             // tabPage1
             // 
@@ -109,7 +113,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 2);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(901, 447);
@@ -132,7 +136,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 2);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(901, 447);
@@ -155,7 +159,7 @@
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView3.Location = new System.Drawing.Point(3, 2);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.Size = new System.Drawing.Size(901, 447);
@@ -170,6 +174,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SalemanForm";
             this.Text = "Каталог продуктов";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

@@ -236,6 +236,7 @@ namespace scaMarketPlays
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Авторзация";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResizeBegin += new System.EventHandler(this.Form1_Resize);
             this.ResizeEnd += new System.EventHandler(this.Form1_Resize);
